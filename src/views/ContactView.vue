@@ -6,9 +6,9 @@ import Contact from "../components/SingleContact.vue";
 
 const route = useRoute();
 const { contact, loading, error } = storeToRefs(useContactStore());
-const { fetchContact } = useContactStore();
+const { fetchSingleContact } = useContactStore();
 
-fetchContact(route.params.id);
+fetchSingleContact(route.params.id);
 </script>
 
 <template>

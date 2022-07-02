@@ -23,7 +23,7 @@ export const useContactStore = defineStore({
                 this.loading = false
             }
         },
-        async fetchContact(id) {
+        async fetchSingleContact(id) {
             this.contact = null
             this.loading = true
             try {
